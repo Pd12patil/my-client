@@ -24,7 +24,7 @@ function Home() {
     ]);
 
     const loadStudents = async() => {
-        const response = await axios.get("http://localhost:5002/students");
+        const response = await axios.get("https://my-server-q054.onrender.com/students");
         setStudents(response.data.data);
     }
 

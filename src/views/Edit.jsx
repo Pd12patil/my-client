@@ -17,7 +17,7 @@ function Edit() {
 
     const editStudents = async() =>{
         try {
-        const response = await axios.put(`http://localhost:5002/students/${userId}`,{
+        const response = await axios.put(`https://my-server-q054.onrender.com/students/${userId}`,{
             // id: student.id,
             name: student.name,
             city: student.city,
@@ -41,7 +41,7 @@ function Edit() {
     const loadStudent = async ()=>{
         //console.log(`Loding student with id: ${userId}`);
         try{
-            const response = await axios.get(`http://localhost:5002/students/${userId}`);
+            const response = await axios.get(`https://my-server-q054.onrender.com/students/${userId}`);
             setStudent(response.data.data);
         }
         catch(e){
