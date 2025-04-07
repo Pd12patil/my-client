@@ -1,0 +1,17 @@
+{
+    "routes": [
+      {
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/add",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/edit/:userId",
+        "destination": "/index.html"
+      }
+    ]
+  }
+  
